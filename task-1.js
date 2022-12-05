@@ -38,10 +38,18 @@
 //  console.log(null >= 0); //true
 // Дано рядок 'я вчу javascript!'. Знайдіть кількість символів у цьому рядку.
 
-const str = "я вчу javascript!";
-console.log(str.length);
+// const str = "я вчу javascript!";
+// console.log(str.length);
 
-console.log(str.slice(2, 5));
-const index = str.indexOf("javascript");
+// console.log(str.slice(2, 5));
+// const index = str.indexOf("javascript");
 
-console.log(str.slice(index, str.length - 1));
+// console.log(str.slice(index, str.length - 1));
+// Напишіть код, який повертає рядок str з першим символом у верхньому регістрі,
+
+let str = 'javascript';
+
+// const newStr = str[0].toUpperCase() + str.slice(1);
+
+const newStr = `${str[0].toUpperCase()}${str.slice(1)}`
+console.log (newStr);
