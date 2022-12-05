@@ -17,12 +17,25 @@
 // };
 
 
-const str = 'Де помити мопед';
+// const str = 'Де помити мопед';
 
-const normalizeStr = str.toLowerCase().replaceAll(' ','');
+// const normalizeStr = str.toLowerCase().replaceAll(' ','');
 
-const reverseStr = normalizeStr.split('').reverse().join('');
+// const reverseStr = normalizeStr.split('').reverse().join('');
 
 
 
-console.log(normalizeStr === reverseStr);
+//console.log(normalizeStr === reverseStr);
+
+//console.log(true && 3);
+//console.log(false && 3);
+// console.log(true && 4 && 'kiwi');
+// console.log(true && 0 && 'kiwi');
+// console.log(true || 3);
+ //console.log(true || 3 || 4);
+// console.log(true || false || 7);
+// console.log(null || 2 || undefined);
+// console.log((1 && null && 2) >= 0);
+ console.log(null > 0); //false
+ console.log(null === 0); //false
+ console.log(null >= 0); //true
