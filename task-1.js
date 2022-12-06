@@ -67,20 +67,48 @@
 // }
 // console.log(newStr);
 
-
-
 //Напишіть цикл, який виводить у консоль
 // числа від max до min за спаданням
 // Додайте усі парні числа від min до max
-const max = 50;
-const min = 23;
-let sum = 0;
-for (let i = max; i >= min; i -=1) {
-    // console.log(i);
-    if (i % 2 !== 0) {
-        continue
-    }
-    sum += i
+// const max = 50;
+// const min = 23;
+// let sum = 0;
+// for (let i = max; i >= min; i -=1) {
+//     // console.log(i);
+//     if (i % 2 !== 0) {
+//         continue
+//     }
+//     sum += i
+// }
+// console.log(sum);
+
+// Напишіть код, який запитуватиме
+//Логін за допомогою prompt і логуватиме результат
+//В консоль браузера
+
+//Якщо відвідувач вводить "Адмін",
+//то prompt запитує пароль.
+//Якщо нічого не ввели або натиснута клавіша Esc
+//Вивести стороку "Скасовано"
+// / / В іншому випадку вивести рядок "Я вас не знаю"
+
+//Пароль перевіряти так:
+//Якщо введено пароль "Я головний",
+//то вивести рядок "Здрастуйте!"
+
+const userLogin = prompt("Введіть login");
+// let userPassward;
+if (userLogin === "Адмін") {
+	const userPassward = prompt("Введіть passward");
+	if (userPassward === "я головний") {
+		console.log("Здрастуйте!");
+	} else if (userPassward === null) {
+		console.log("Скасовано");
+	} else {
+		console.log("Невірний пароль");
+	}
+} else if (userLogin === null) {
+	console.log("Скасовано");
+} else {
+	console.log("Я вас не знаю");
 }
-console.log(sum);
- 
