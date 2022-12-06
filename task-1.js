@@ -57,12 +57,30 @@
 // Напишіть код який перевіряє довжину str і, якщо вона перевищує maxlength – замінює кінець str символом трьох крапок "…", щоб його довжина була рівною maxlength.
 
 // "Що я хотів би розповісти на цю тему:"
-let newStr = '';
-const str = "Що я хотів би розповісти на цю тему:";
-const maxLength = 20;
-if (str.length > maxLength) {
-    newStr = str.slice(0, maxLength - 1) + '…';
-} else {
-    newStr = str;
+// let newStr = '';
+// const str = "Що я хотів би розповісти на цю тему:";
+// const maxLength = 20;
+// if (str.length > maxLength) {
+//     newStr = str.slice(0, maxLength - 1) + '…';
+// } else {
+//     newStr = str;
+// }
+// console.log(newStr);
+
+
+
+//Напишіть цикл, який виводить у консоль
+// числа від max до min за спаданням
+// Додайте усі парні числа від min до max
+const max = 50;
+const min = 23;
+let sum = 0;
+for (let i = max; i >= min; i -=1) {
+    // console.log(i);
+    if (i % 2 !== 0) {
+        continue
+    }
+    sum += i
 }
-console.log(newStr);
+console.log(sum);
+ 
