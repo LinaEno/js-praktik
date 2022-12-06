@@ -147,16 +147,16 @@
 //Робити перевірку,що користувач ввів саме число,
 //а не довільний набір символів не потрібно.
 
-let userNumber = prompt("Введіть число");
-let total=0;
-// while (userNumber){
+// let userNumber = prompt("Введіть число");
+// let total=0;
+// // while (userNumber){
+// // 	total += Number(userNumber);
+// // 	userNumber = prompt("Введіть число");
+// // }
+// do {
 // 	total += Number(userNumber);
 // 	userNumber = prompt("Введіть число");
-// }
-do {
-	total += Number(userNumber);
-	userNumber = prompt("Введіть число");
-// console.log(userNumber);
-} while (userNumber)
-console.log(total);
+// } while (userNumber)
+// console.log(total);
+
 
