@@ -96,19 +96,44 @@
 //Якщо введено пароль "Я головний",
 //то вивести рядок "Здрастуйте!"
 
+// const userLogin = prompt("Введіть login");
+// // let userPassward;
+// if (userLogin === "Адмін") {
+// 	const userPassward = prompt("Введіть passward");
+// 	if (userPassward === "я головний") {
+// 		console.log("Здрастуйте!");
+// 	} else if (userPassward === null) {
+// 		console.log("Скасовано");
+// 	} else {
+// 		console.log("Невірний пароль");
+// 	}
+// } else if (userLogin === null) {
+// 	console.log("Скасовано");
+// } else {
+// 	console.log("Я вас не знаю");
+// }
+
+
 const userLogin = prompt("Введіть login");
-// let userPassward;
-if (userLogin === "Адмін") {
-	const userPassward = prompt("Введіть passward");
-	if (userPassward === "я головний") {
-		console.log("Здрастуйте!");
-	} else if (userPassward === null) {
+switch (userLogin) {
+	case "Адмін":
+		const userPassward = prompt("Введіть passward");
+		console.log(userPassward);
+		switch (userPassward) {
+			case "я головний":
+				console.log("Здрастуйте!");
+				break;
+			case null:
+				console.log("Скасовано");
+				break;
+			default: 
+				console.log("Невірний пароль");
+		}
+		break;
+	case null:
 		console.log("Скасовано");
-	} else {
-		console.log("Невірний пароль");
-	}
-} else if (userLogin === null) {
-	console.log("Скасовано");
-} else {
-	console.log("Я вас не знаю");
+		break;
+	default:
+		console.log("Я вас не знаю");
+
 }
