@@ -80,29 +80,40 @@
 //якщо кольору немає виводить console.error('Такий колір не знайдено');
 //і встановлює колір документа червоний
 // document.body.style.background = 'red';
-const colors = ['blue', 'yellow', 'olive', 'fuchsia', 'lime', 'aqua', 'maroon']
-const randomColor = 'blue';
-if (colors.includes(randomColor)) {
-  document.body.style.background = randomColor;
-} else {
-  console.error('Такий колір не знайдено');
-  document.body.style.background = 'red';
-}
-
-
-
-
-
-
-
-
-
-
-
+// const colors = ['blue', 'yellow', 'olive', 'fuchsia', 'lime', 'aqua', 'maroon']
+// const randomColor = 'blue';
+// if (colors.includes(randomColor)) {
+//   document.body.style.background = randomColor;
+// } else {
+//   console.error('Такий колір не знайдено');
+//   document.body.style.background = 'red';
+// }
 
 
 
 // ЗАДАЧКА 5
+//Напишіть скрипт, який замінює регістр кожного символу //У сторіччі на протилежний //Наприклад 'JavaScript' повинен повернути 'jAVAsCRIPT' const string = "JavaScript"; 
+
+const str = 'JavaScript';
+let newStr = "";
+for (let i = 0; i < str.length; i += 1) {
+
+  if (str[i].toLowerCase() === str[i]) {
+    newStr += str[i].toUpperCase();
+  }
+  else {
+    newStr += str[i].toLowerCase();
+  }
+}
+console.log(newStr);
+
+
+
+
+
+
+
+
 // ЗАДАЧКА 6
 // ЗАДАЧКА 7
 // ЗАДАЧКА 8
