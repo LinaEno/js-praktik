@@ -32,17 +32,17 @@
 ? Вставте "Country" та "Reggy" на початок масиву.
  */
 
-const genres = ['Jazz', 'Blues'];
-genres.push("Rock'n'roll");
+// const genres = ['Jazz', 'Blues'];
+// genres.push("Rock'n'roll");
 
-console.log(genres[0]);
-console.log(genres[genres.length - 1]);
+// console.log(genres[0]);
+// console.log(genres[genres.length - 1]);
 
 //console.log(genres.shift());
 //console.log(genres.splice(0, 0, 'Pop'));
 
-console.log(genres.unshift("Country", "Reggy"));
-console.log(genres);
+// console.log(genres.unshift("Country", "Reggy"));
+// console.log(genres);
 
 
 
@@ -55,6 +55,20 @@ console.log(genres);
 
 
 // ЗАДАЧКА 3
+/*
+? Напиши скрипт пошуку найдовшого слова в масиві.
+? Код має працювати для будь-якого масиву рядків.
+? Використовуйте цикл для вирішення задачі.
+*/
+const genres = ['Jazz', 'Blues', "rock'n'roll", 'Country', 'Reggy'];
+let longestWord = genres[0];
+for(const genre of genres){
+//console.log(genre.length);
+if(genre.length>longestWord.length){
+longestWord=genre;
+}
+}
+console.log(longestWord);
 
 
 
