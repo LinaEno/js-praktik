@@ -126,7 +126,7 @@
 // 			case null:
 // 				console.log("Скасовано");
 // 				break;
-// 			default: 
+// 			default:
 // 				console.log("Невірний пароль");
 // 		}
 // 		break;
@@ -147,8 +147,8 @@
 //Робити перевірку,що користувач ввів саме число,
 //а не довільний набір символів не потрібно.
 
-// let userNumber = prompt("Введіть число");
-// let total=0;
+// // let userNumber = prompt("Введіть число");
+// // let total=0;
 // // while (userNumber){
 // // 	total += Number(userNumber);
 // // 	userNumber = prompt("Введіть число");
@@ -156,7 +156,40 @@
 // do {
 // 	total += Number(userNumber);
 // 	userNumber = prompt("Введіть число");
+// }
+// do {
+// 	total += Number(userNumber);
+// 	userNumber = prompt("Введіть число");
+
 // } while (userNumber)
 // console.log(total);
+
+// Напишіть цикл, який пропонує ввести
+//число більше 100 через prompt.
+//Якщо відвідувач ввів інше число - попросити
+//Ввести ще раз і так далі.
+//Цикл має питати число, поки відвідувач не
+//введе число більше 100, або натисне кнопку
+//Скасування в prompt
+
+// let userNumber = prompt("Введіть число більше 100");
+
+
+
+// let userNumber;
+// do {
+// 	userNumber = prompt("Введіть число більше 100");
+// } while (userNumber < 100 && userNumber !== null );
+
+
+// let userNumber = prompt('Введіть число');
+
+// while (userNumber < 100 && userNumber !== null) {
+// 	userNumber = prompt('Введіть число');
+	
+// }
+
+
+
 
 
