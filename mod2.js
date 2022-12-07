@@ -2,15 +2,23 @@
 
 // ЗАДАЧКА 1
 
+const numbers = [1, 2, 3, 4, 5, 6, 7];
 
+// console.log(numbers.reverse());
 
+for (let i = 0; i < numbers.length/2; i += 1) {
 
+    // console.log(numbers[numbers.length-1-i]);
 
+    let temp = numbers[i];
 
+    numbers[i] = numbers[numbers.length - 1 - i];
+    
+    numbers[numbers.length - 1 - i] = temp;
 
+}
 
-
-
+console.log(numbers);
 
 
 
