@@ -1,4 +1,4 @@
-                // МАСИВИ ТА ФУНКЦІЇ
+// МАСИВИ ТА ФУНКЦІЇ
 
 // // ЗАДАЧКА 1
 
@@ -13,7 +13,7 @@
 //     let temp = numbers[i];
 
 //     numbers[i] = numbers[numbers.length - 1 - i];
-    
+
 //     numbers[numbers.length - 1 - i] = temp;
 
 // }
@@ -60,31 +60,35 @@
 ? Код має працювати для будь-якого масиву рядків.
 ? Використовуйте цикл для вирішення задачі.
 */
-const genres = ['Jazz', 'Blues', "rock'n'roll", 'Country', 'Reggy'];
-let longestWord = genres[0];
-for(const genre of genres){
-//console.log(genre.length);
-if(genre.length>longestWord.length){
-longestWord=genre;
-}
-}
-console.log(longestWord);
-
-
-
-
-
-
-
-
-
-
-
-
+// const genres = ['Jazz', 'Blues', "rock'n'roll", 'Country', 'Reggy'];
+// let longestWord = genres[0];
+// for(const genre of genres){
+// //console.log(genre.length);
+// if(genre.length>longestWord.length){
+// longestWord=genre;
+// }
+// }
+// console.log(longestWord);
 
 
 
 // ЗАДАЧКА 4
+
+
+// /Напишіть код який визначає наявність кольору у масиві
+//якщо колір є, встановлює його як фон документа
+//якщо кольору немає виводить console.error('Такий колір не знайдено');
+//і встановлює колір документа червоний
+// document.body.style.background = 'red';
+const colors = ['blue', 'yellow', 'olive', 'fuchsia', 'lime', 'aqua', 'maroon']
+const randomColor = 'blue';
+if (colors.includes(randomColor)) {
+  document.body.style.background = randomColor;
+} else {
+  console.error('Такий колір не знайдено');
+  document.body.style.background = 'red';
+}
+
 
 
 
