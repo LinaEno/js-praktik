@@ -1,14 +1,16 @@
+//
+    // Задачка 1
 // Дано рядок, що складається із символів, наприклад, 'abcde'.
 // Перевірте, що першим символом цього рядка є буква 'a'.
 // Якщо це так - виведіть 'так', інакше виведіть 'ні'.
 
 // const str = 'abcde';
-
-// // if (str.startsWith('b')) {
-// //     console.log('так');
-// // }
-// // else { console.log('ні') };
-
+    // Рішення 1
+// if (str.startsWith('b')) {
+//     console.log('так');
+// }
+// else { console.log('ні') };
+    // Рішення 2
 // if (str[0] === 'a') {
 //     console.log('так');
 // }
@@ -16,6 +18,9 @@
 //     console.log('ні')
 // };
 
+
+
+    // Задачка 2
 // const str = 'Де помити мопед';
 
 // const normalizeStr = str.toLowerCase().replaceAll(' ','');
@@ -24,6 +29,8 @@
 
 //console.log(normalizeStr === reverseStr);
 
+
+    // Задачка 3
 //console.log(true && 3);
 //console.log(false && 3);
 // console.log(true && 4 && 'kiwi');
@@ -36,6 +43,9 @@
 //  console.log(null > 0); //false
 //  console.log(null === 0); //false
 //  console.log(null >= 0); //true
+
+
+    // Задачка 4
 // Дано рядок 'я вчу javascript!'. Знайдіть кількість символів у цьому рядку.
 
 // const str = "я вчу javascript!";
@@ -54,6 +64,8 @@
 // const newStr = `${str[0].toUpperCase()}${str.slice(1)}`
 // console.log (newStr);
 
+
+    // Задачка 5
 // Напишіть код який перевіряє довжину str і, якщо вона перевищує maxlength – замінює кінець str символом трьох крапок "…", щоб його довжина була рівною maxlength.
 
 // "Що я хотів би розповісти на цю тему:"
@@ -67,6 +79,8 @@
 // }
 // console.log(newStr);
 
+
+    // Задачка 6
 //Напишіть цикл, який виводить у консоль
 // числа від max до min за спаданням
 // Додайте усі парні числа від min до max
@@ -82,6 +96,8 @@
 // }
 // console.log(sum);
 
+
+    // Задачка 7
 // Напишіть код, який запитуватиме
 //Логін за допомогою prompt і логуватиме результат
 //В консоль браузера
@@ -95,9 +111,9 @@
 //Пароль перевіряти так:
 //Якщо введено пароль "Я головний",
 //то вивести рядок "Здрастуйте!"
-
+        // Рішення 1
 // const userLogin = prompt("Введіть login");
-// // let userPassward;
+// let userPassward;
 // if (userLogin === "Адмін") {
 // 	const userPassward = prompt("Введіть passward");
 // 	if (userPassward === "я головний") {
@@ -113,7 +129,7 @@
 // 	console.log("Я вас не знаю");
 // }
 
-
+        // Рішення 2
 // const userLogin = prompt("Введіть login");
 // switch (userLogin) {
 // 	case "Адмін":
@@ -137,6 +153,10 @@
 // 		console.log("Я вас не знаю");
 
 // }
+
+
+
+        // Задача 8
 // При завантаженні сторінки користувачеві пропонується
 //В prompt ввести число. Введення додається до значення
 //Змінної total.
@@ -147,23 +167,25 @@
 //Робити перевірку,що користувач ввів саме число,
 //а не довільний набір символів не потрібно.
 
-// // let userNumber = prompt("Введіть число");
-// // let total=0;
-// // while (userNumber){
-// // 	total += Number(userNumber);
-// // 	userNumber = prompt("Введіть число");
-// // }
-// do {
+// let userNumber = prompt("Введіть число");
+// let total=0;
+        // Рішення 1
+// while (userNumber){
 // 	total += Number(userNumber);
 // 	userNumber = prompt("Введіть число");
 // }
+
+        // Рішення 2
 // do {
 // 	total += Number(userNumber);
 // 	userNumber = prompt("Введіть число");
-
 // } while (userNumber)
 // console.log(total);
 
+
+
+
+        // Задачка 9
 // Напишіть цикл, який пропонує ввести
 //число більше 100 через prompt.
 //Якщо відвідувач ввів інше число - попросити
@@ -172,9 +194,8 @@
 //введе число більше 100, або натисне кнопку
 //Скасування в prompt
 
+        // Рішення 1
 // let userNumber = prompt("Введіть число більше 100");
-
-
 
 // let userNumber;
 // do {
@@ -182,6 +203,7 @@
 // } while (userNumber < 100 && userNumber !== null );
 
 
+        // Рішення 2
 // let userNumber = prompt('Введіть число');
 
 // while (userNumber < 100 && userNumber !== null) {
