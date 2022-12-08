@@ -150,20 +150,41 @@ const str = 'abcde'; // ['ab', 'cd','e']
 //менше з чисел a, b
 //Потрібно додати перевірку, що функція отримує числа
 
-const min = function (a, b) {
-  if (typeof a !== 'number' || typeof b !== 'number') {
-    return 'Передали не число';
-  }
+// const min = function (a, b) {
+//   if (typeof a !== 'number' || typeof b !== 'number') {
+//     return 'Передали не число';
+//   }
 
-  return a < b ? a : b;
-  //   if (a < b) {
-  //     return a;
-  //   }
-  //   return b;
-};
+//   return a < b ? a : b;
+//   //   if (a < b) {
+//   //     return a;
+//   //   }
+//   //   return b;
+// };
 
-console.log(min(4, 3));
+// console.log(min(4, 3));
 // ЗАДАЧКА 9
+//Напишіть функцію caculculateAverage()
+//яка приймає довільну кількість
+//Аргументів і повертає їхнє середнє значення.
+//Додати перевірку, що аргументи це числа.
+
+function caculculateAverage() {
+  console.log(arguments);
+
+  let total = 0;
+  let count = 0;
+  for (let i = 0; i < arguments.length; i += 1) {
+    if (typeof arguments[i] !== 'number') {
+      continue;
+    }
+    total += arguments[i];
+    count += 1;
+  }
+  return total / count;
+}
+
+console.log(caculculateAverage('c', 1, 3, 7, 9, 'a', 'b'));
 // ЗАДАЧКА 10
 // ЗАДАЧКА 11
 // ЗАДАЧКА 12
