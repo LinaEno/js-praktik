@@ -189,8 +189,22 @@ const str = 'abcde'; // ['ab', 'cd','e']
 
 //Напишіть функцію unique(arr), яка повертає масив,
 //містить лише унікальні елементи arr.
-const words = ["HTML","CSS", "JS", "React", "JS", "CSS", "JS",
-"Node.js", "JS", "React", "CSS", "React", "HTML", "Node.js"];
+const words = [
+  'HTML',
+  'CSS',
+  'JS',
+  'React',
+  'JS',
+  'CSS',
+  'JS',
+  'Node.js',
+  'JS',
+  'React',
+  'CSS',
+  'React',
+  'HTML',
+  'Node.js',
+];
 
 // const uniqueArr = function(array){
 //     const newArray = [];
@@ -210,18 +224,41 @@ const words = ["HTML","CSS", "JS", "React", "JS", "CSS", "JS",
 
 // Варіант 2
 
-const uniqueArr = function(array){
-      const newArray = [];
-      for (let i= 0; i< array.length; i += 1){
-      
-        if(!newArray.includes(array[i])){
-          newArray.push(array[i]);
-        }
-      }
-      return newArray;
-  }
-  
-   console.log(uniqueArr(words));
+// const uniqueArr = function(array){
+//       const newArray = [];
+//       for (let i= 0; i< array.length; i += 1){
+
+//         if(!newArray.includes(array[i])){
+//           newArray.push(array[i]);
+//         }
+//       }
+//       return newArray;
+//   }
+
+//    console.log(uniqueArr(words));
 
 // ЗАДАЧКА 11
+
+// /якщо число ділитися на 3 повертати
+//fizz якщо ділитися на 5 повертати buzz
+//якщо ділитися на 3 і на 5 повернути fizzbuzz
+// 17:01
+// fizzBuzz(24)
+
+const fizzBuzz = function (a) {
+  for (let i = 1; i <= a; i += 1) {
+    if (i % 3 === 0 && i % 5 === 0) {
+      console.log('fizzbuzz');
+    } else if (i % 3 === 0) {
+      console.log('fizz');
+    } else if (i % 5 === 0) {
+      console.log('buzz');
+    } else {
+      console.log(i);
+    }
+  }
+};
+
+fizzBuzz(50);
+
 // ЗАДАЧКА 12
