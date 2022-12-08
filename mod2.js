@@ -92,29 +92,61 @@
 
 
 // ЗАДАЧКА 5
-//Напишіть скрипт, який замінює регістр кожного символу //У сторіччі на протилежний //Наприклад 'JavaScript' повинен повернути 'jAVAsCRIPT' const string = "JavaScript"; 
+//Напишіть скрипт, який замінює регістр кожного символу //У сторіччі на протилежний //Наприклад 'JavaScript' повинен повернути 'jAVAsCRIPT' const string = "JavaScript";
 
-const str = 'JavaScript';
-let newStr = "";
-for (let i = 0; i < str.length; i += 1) {
+// const str = 'JavaScript';
+// let newStr = "";
+// for (let i = 0; i < str.length; i += 1) {
 
-  if (str[i].toLowerCase() === str[i]) {
-    newStr += str[i].toUpperCase();
-  }
-  else {
-    newStr += str[i].toLowerCase();
-  }
-}
-console.log(newStr);
-
-
-
-
-
-
+//   if (str[i].toLowerCase() === str[i]) {
+//     newStr += str[i].toUpperCase();
+//   }
+//   else {
+//     newStr += str[i].toLowerCase();
+//   }
+// }
+// console.log(newStr);
 
 
 // ЗАДАЧКА 6
+
+//Написати функцію, яка розіб'є рядок на масив
+//по 2 літери, якщо останньої літери немає пари, то
+//має записатися 1 літера.
+//Даний рядок 'abc' - поверне ['ab', 'c']
+
+//*якщо остання буква не має пари, поверне _
+//Рядок 'abc' - поверне ['ab', 'c_']
+
+const str = 'abcde'; // ['ab', 'cd','e']
+
+// const newStr = str.length % 2 === 0 ? str : str + '_';
+// console.log(newStr);
+
+// const arr = [];
+// for (let i = 0; i < newStr.length; i += 2) {
+//   arr.push(newStr[i] + newStr[i + 1]);
+  
+// }
+// console.log(arr);
+//варіант 2
+
+const arr = [];
+for (let i = 0; i < str.length; i += 2) {
+  
+  // if (str[i + 1]) {
+  //   arr.push(str[i] + str[i + 1]);
+  // }
+  // else {
+  //   arr.push(str[i] + '_');
+  // }
+
+  arr.push(str[i] + (str[i + 1] ? str[i + 1] : '_'))
+}
+console.log(arr);
+
+
+
 // ЗАДАЧКА 7
 // ЗАДАЧКА 8
 // ЗАДАЧКА 9
