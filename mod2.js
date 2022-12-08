@@ -169,22 +169,59 @@ const str = 'abcde'; // ['ab', 'cd','e']
 //Аргументів і повертає їхнє середнє значення.
 //Додати перевірку, що аргументи це числа.
 
-function caculculateAverage() {
-  console.log(arguments);
+// function caculculateAverage() {
+//   console.log(arguments);
 
-  let total = 0;
-  let count = 0;
-  for (let i = 0; i < arguments.length; i += 1) {
-    if (typeof arguments[i] !== 'number') {
-      continue;
-    }
-    total += arguments[i];
-    count += 1;
-  }
-  return total / count;
-}
+//   let total = 0;
+//   let count = 0;
+//   for (let i = 0; i < arguments.length; i += 1) {
+//     if (typeof arguments[i] !== 'number') {
+//       continue;
+//     }
+//     total += arguments[i];
+//     count += 1;
+//   }
+//   return total / count;
+// }
 
-console.log(caculculateAverage('c', 1, 3, 7, 9, 'a', 'b'));
+// console.log(caculculateAverage('c', 1, 3, 7, 9, 'a', 'b'));
 // ЗАДАЧКА 10
+
+//Напишіть функцію unique(arr), яка повертає масив,
+//містить лише унікальні елементи arr.
+const words = ["HTML","CSS", "JS", "React", "JS", "CSS", "JS",
+"Node.js", "JS", "React", "CSS", "React", "HTML", "Node.js"];
+
+// const uniqueArr = function(array){
+//     const newArray = [];
+//     for (let i= 0; i< array.length; i += 1){
+//       // console.log(array[i]);
+//       // console.log('indexOf', array.indexOf(array[i]));
+//       // console.log('index', i);
+//       if(i === array.indexOf(array[i])){
+//         console.log(array[i]);
+//         newArray.push(array[i]);
+//       }
+//     }
+//     return newArray;
+// }
+
+//  console.log(uniqueArr(words));
+
+// Варіант 2
+
+const uniqueArr = function(array){
+      const newArray = [];
+      for (let i= 0; i< array.length; i += 1){
+      
+        if(!newArray.includes(array[i])){
+          newArray.push(array[i]);
+        }
+      }
+      return newArray;
+  }
+  
+   console.log(uniqueArr(words));
+
 // ЗАДАЧКА 11
 // ЗАДАЧКА 12
