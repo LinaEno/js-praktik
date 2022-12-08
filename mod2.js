@@ -145,6 +145,24 @@ const str = 'abcde'; // ['ab', 'cd','e']
 // console.log(newArray);
 
 // ЗАДАЧКА 8
+
+//Напишіть функцію min(a, b), яка повертає
+//менше з чисел a, b
+//Потрібно додати перевірку, що функція отримує числа
+
+const min = function (a, b) {
+  if (typeof a !== 'number' || typeof b !== 'number') {
+    return 'Передали не число';
+  }
+
+  return a < b ? a : b;
+  //   if (a < b) {
+  //     return a;
+  //   }
+  //   return b;
+};
+
+console.log(min(4, 3));
 // ЗАДАЧКА 9
 // ЗАДАЧКА 10
 // ЗАДАЧКА 11
