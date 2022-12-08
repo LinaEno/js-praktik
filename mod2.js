@@ -20,8 +20,6 @@
 
 // console.log(numbers);
 
-
-
 // ЗАДАЧКА 2
 /*
 ? Створіть масив genres з елементами Jazz і Blues.
@@ -44,16 +42,6 @@
 // console.log(genres.unshift("Country", "Reggy"));
 // console.log(genres);
 
-
-
-
-
-
-
-
-
-
-
 // ЗАДАЧКА 3
 /*
 ? Напиши скрипт пошуку найдовшого слова в масиві.
@@ -70,10 +58,7 @@
 // }
 // console.log(longestWord);
 
-
-
 // ЗАДАЧКА 4
-
 
 // /Напишіть код який визначає наявність кольору у масиві
 //якщо колір є, встановлює його як фон документа
@@ -88,8 +73,6 @@
 //   console.error('Такий колір не знайдено');
 //   document.body.style.background = 'red';
 // }
-
-
 
 // ЗАДАЧКА 5
 //Напишіть скрипт, який замінює регістр кожного символу //У сторіччі на протилежний //Наприклад 'JavaScript' повинен повернути 'jAVAsCRIPT' const string = "JavaScript";
@@ -106,7 +89,6 @@
 //   }
 // }
 // console.log(newStr);
-
 
 // ЗАДАЧКА 6
 
@@ -126,28 +108,42 @@ const str = 'abcde'; // ['ab', 'cd','e']
 // const arr = [];
 // for (let i = 0; i < newStr.length; i += 2) {
 //   arr.push(newStr[i] + newStr[i + 1]);
-  
+
 // }
 // console.log(arr);
 //варіант 2
 
-const arr = [];
-for (let i = 0; i < str.length; i += 2) {
-  
-  // if (str[i + 1]) {
-  //   arr.push(str[i] + str[i + 1]);
-  // }
-  // else {
-  //   arr.push(str[i] + '_');
-  // }
+// const arr = [];
+// for (let i = 0; i < str.length; i += 2) {
+//   // if (str[i + 1]) {
+//   //   arr.push(str[i] + str[i + 1]);
+//   // }
+//   // else {
+//   //   arr.push(str[i] + '_');
+//   // }
 
-  arr.push(str[i] + (str[i + 1] ? str[i + 1] : '_'))
-}
-console.log(arr);
-
-
+//   arr.push(str[i] + (str[i + 1] ? str[i + 1] : '_'));
+// }
+// console.log(arr);
 
 // ЗАДАЧКА 7
+//Напишіть функцію logItems(array), яка приймає
+//масив та використовує цикл for, який для кожного
+//елемента масиву виводитиме повідомлення у форматі
+//<номер елемента> - <значення елемента>
+//Нумерація елементів має починатися з першого.
+
+// const logItems = function (array) {
+//   for (let i = 0; i < array.length; i += 1) {
+//     console.log(`${i + 1} - ${array[i]}`);
+//   }
+//   return array;
+// };
+
+// console.log(logItems(['Джаз', 'Блюз', 'Рок-н-ролл', 'Регги', 'Рэп']));
+// const newArray = logItems;
+// console.log(newArray);
+
 // ЗАДАЧКА 8
 // ЗАДАЧКА 9
 // ЗАДАЧКА 10
