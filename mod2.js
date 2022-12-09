@@ -213,14 +213,14 @@
 // const uniqueArr = function(array){
 //       const newArray = [];
 //       for (let i= 0; i< array.length; i += 1){
-      
+
 //         if(!newArray.includes(array[i])){
 //           newArray.push(array[i]);
 //         }
 //       }
 //       return newArray;
 //   }
-  
+
 //    console.log(uniqueArr(words));
 
 // ЗАДАЧКА 11
@@ -233,34 +233,30 @@
 //   for (let i = newString.length - 1; i >= 0; i -= 1){
 //     reverseString += newString[i];
 //   }
- 
+
 //   return reverseString === newString;
 // }
 // const isPalindrom = changeStr(str);
 // console.log(isPalindrom);
 
-
-
 // function changeStr(string) {
 //   let newString = string.toLowerCase().replaceAll(' ', '');
 //   const newArr = [];
- 
+
 //   for (let i = newString.length - 1; i >= 0; i -= 1){
 //     newArr.push(newString[i]);
 //   }
 
- 
 //   return newArr.join('') === newString;
 // }
 // const isPalindrom = changeStr(str);
 // console.log(isPalindrom);
 
-
 // ЗАДАЧКА 12
 // Напишіть функцію copyArr(arr), яка копіює масив, не змінюючи іригінал.
 // const fruits = ['🍎', '🍇', '🍑', '🍌', '🍋'];
-    
-    // Варіант 1
+
+// Варіант 1
 // function copyArray(array) {
 //     let newArray = array.slice();
 //     console.log(newArray);
@@ -268,7 +264,7 @@
 
 // copyArray(fruits);
 
-    // Варіант 2
+// Варіант 2
 // function copyArray(array) {
 //     let newArray = [];
 //     for (const element of array) {
@@ -279,7 +275,7 @@
 
 // copyArray(fruits);
 
-    // Варіант 3
+// Варіант 3
 
 // function copyArray(array) {
 //     let newArray = [...array];
@@ -288,11 +284,9 @@
 
 // copyArray(fruits);
 
-
 /* ? Напишіть функції для роботи з колекцією навчальних курсів courses: ? addCourse(name) - додає курс до кінця колекції ? removeCourse(name) - видаляє курс із колекції ? updateCourse(oldName, newName) – змінює ім'я на нове */
 
-
-// const courses = ["HTML", "CSS", "JavaScript", "React", "PostgreSQL"]; 
+// const courses = ["HTML", "CSS", "JavaScript", "React", "PostgreSQL"];
 
 // function addCourse(name) {
 
@@ -310,9 +304,8 @@
 //         alert ('такий курс не можем видалити')
 //         return
 //      }
-    
+
 //     courses.splice(index, 1)
-    
 
 // }
 
@@ -322,7 +315,7 @@
 //         alert ('такий курс не можем знайти')
 //         return
 //      }
-    
+
 //     courses.splice(index, 1, newName);
 // }
 
@@ -333,3 +326,28 @@
 // updateCourse("CSS", "C++")
 
 // console.log(courses);
+
+// ЗАДАЧА 13
+/*
+рік, номер якого кратний 400, - високосний;
+     інші роки, номер яких кратний 100, - невисокосні (наприклад, роки 1700, 1800, 1900, 2100, 2200, 2300);
+     інші роки, номер яких кратний 4, - високосні 
+     всі інші роки – невисокосні.
+     */
+
+// function year(start, end) {
+//   for (let i = start; i < end; i += 1) {
+//     if ((i % 4 === 0 && i % 100 !== 0) || (i % 100 === 0 && i % 400 === 0)) {
+//       console.log(i);
+//     }
+//     // if (i % 400 === 0 ) {
+//     //   console.log(i);
+//     // }
+
+//     // if (i % 100 !== 0 && i % 4 === 0) {
+//     //   console.log(i);
+//     // }
+//   }
+// }
+
+// year(2000, 2201);
