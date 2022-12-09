@@ -351,3 +351,12 @@
 // }
 
 // year(2000, 2201);
+
+// ЗАДАЧА 14
+// Напишіть функцію getLast(array, n), яка повертає фрагмент масиву, що містить останні 'n' елементів масиву.
+// const array = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+// function getLast(array, n) {
+//   const newArray = array.slice(-n);
+//   console.log(newArray);
+// }
+// getLast(array, 5);
