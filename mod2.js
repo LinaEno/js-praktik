@@ -189,8 +189,8 @@
 
 //Напишіть функцію unique(arr), яка повертає масив,
 //містить лише унікальні елементи arr.
-const words = ["HTML","CSS", "JS", "React", "JS", "CSS", "JS",
-"Node.js", "JS", "React", "CSS", "React", "HTML", "Node.js"];
+// const words = ["HTML","CSS", "JS", "React", "JS", "CSS", "JS",
+// "Node.js", "JS", "React", "CSS", "React", "HTML", "Node.js"];
 
 // const uniqueArr = function(array){
 //     const newArray = [];
@@ -225,7 +225,7 @@ const words = ["HTML","CSS", "JS", "React", "JS", "CSS", "JS",
 
 // ЗАДАЧКА 11
 
-const str = 'Де помити мопед';
+// const str = 'Де помити мопед';
 
 // function changeStr(string) {
 //   let newString = string.toLowerCase().replaceAll(' ', '');
@@ -257,3 +257,33 @@ const str = 'Де помити мопед';
 
 
 // ЗАДАЧКА 12
+// Напишіть функцію copyArr(arr), яка копіює масив, не змінюючи іригінал.
+// const fruits = ['🍎', '🍇', '🍑', '🍌', '🍋'];
+    
+    // Варіант 1
+// function copyArray(array) {
+//     let newArray = array.slice();
+//     console.log(newArray);
+// }
+
+// copyArray(fruits);
+
+    // Варіант 2
+// function copyArray(array) {
+//     let newArray = [];
+//     for (const element of array) {
+//         newArray.push(element);
+//     }
+//     console.log(newArray)
+// }
+
+// copyArray(fruits);
+
+    // Варіант 3
+
+// function copyArray(array) {
+//     let newArray = [...array];
+//     console.log(newArray);
+// }
+
+// copyArray(fruits);
