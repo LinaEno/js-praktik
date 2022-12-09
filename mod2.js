@@ -100,7 +100,7 @@
 //*якщо остання буква не має пари, поверне _
 //Рядок 'abc' - поверне ['ab', 'c_']
 
-const str = 'abcde'; // ['ab', 'cd','e']
+// const str = 'abcde'; // ['ab', 'cd','e']
 
 // const newStr = str.length % 2 === 0 ? str : str + '_';
 // console.log(newStr);
@@ -210,18 +210,50 @@ const words = ["HTML","CSS", "JS", "React", "JS", "CSS", "JS",
 
 // Варіант 2
 
-const uniqueArr = function(array){
-      const newArray = [];
-      for (let i= 0; i< array.length; i += 1){
+// const uniqueArr = function(array){
+//       const newArray = [];
+//       for (let i= 0; i< array.length; i += 1){
       
-        if(!newArray.includes(array[i])){
-          newArray.push(array[i]);
-        }
-      }
-      return newArray;
-  }
+//         if(!newArray.includes(array[i])){
+//           newArray.push(array[i]);
+//         }
+//       }
+//       return newArray;
+//   }
   
-   console.log(uniqueArr(words));
+//    console.log(uniqueArr(words));
 
 // ЗАДАЧКА 11
+
+const str = 'Де помити мопед';
+
+// function changeStr(string) {
+//   let newString = string.toLowerCase().replaceAll(' ', '');
+//   let reverseString = '';
+//   for (let i = newString.length - 1; i >= 0; i -= 1){
+//     reverseString += newString[i];
+//   }
+ 
+//   return reverseString === newString;
+// }
+// const isPalindrom = changeStr(str);
+// console.log(isPalindrom);
+
+
+
+// function changeStr(string) {
+//   let newString = string.toLowerCase().replaceAll(' ', '');
+//   const newArr = [];
+ 
+//   for (let i = newString.length - 1; i >= 0; i -= 1){
+//     newArr.push(newString[i]);
+//   }
+
+ 
+//   return newArr.join('') === newString;
+// }
+// const isPalindrom = changeStr(str);
+// console.log(isPalindrom);
+
+
 // ЗАДАЧКА 12
