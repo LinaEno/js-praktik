@@ -287,3 +287,49 @@
 // }
 
 // copyArray(fruits);
+
+
+/* ? Напишіть функції для роботи з колекцією навчальних курсів courses: ? addCourse(name) - додає курс до кінця колекції ? removeCourse(name) - видаляє курс із колекції ? updateCourse(oldName, newName) – змінює ім'я на нове */
+
+
+// const courses = ["HTML", "CSS", "JavaScript", "React", "PostgreSQL"]; 
+
+// function addCourse(name) {
+
+//     if (courses.includes(name)) {
+//         alert ('такий курс вже існує')
+//         return
+//     }
+//     courses.push(name);
+
+// }
+
+// function removeCourse(name) {
+//     const index = courses.indexOf(name);
+//      if (index === -1) {
+//         alert ('такий курс не можем видалити')
+//         return
+//      }
+    
+//     courses.splice(index, 1)
+    
+
+// }
+
+// function updateCourse(oldName, newName) {
+//     const index = courses.indexOf(oldName);
+//      if (index === -1) {
+//         alert ('такий курс не можем знайти')
+//         return
+//      }
+    
+//     courses.splice(index, 1, newName);
+// }
+
+// addCourse("Java");
+
+// removeCourse("HTML");
+
+// updateCourse("CSS", "C++")
+
+// console.log(courses);
